@@ -1,2 +1,2 @@
-# coursera-spa-assigments
-Assigments for the coursera.org course "Single Page Web Applications with AngularJS"
+# coursera-spa-assignments
+Assignments for the coursera.org course "Single Page Web Applications with AngularJS"

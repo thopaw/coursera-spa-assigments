@@ -3,6 +3,7 @@
     <li class="list-group-item" ng-repeat="menu in ctrl.foundItems">
       <div>{{ menu.short_name }}</div>
        <div>{{ menu.name }}</div>
+       <div>{{ menu.description }}</div>
        <div>
          <button ng-click="ctrl.onRemove({index: $index});"><span class="glyphicon glyphicon-remove"></span> Don't want this one!</button>
        </div>

@@ -1,0 +1,8 @@
+<div class="row">
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="menu in ctrl.foundItems">
+      <span>{{ menu.name }}</span>
+      <button ng-click="ctrl.onRemove({index: $index});"><span class="glyphicon glyphicon-remove"></span> Don't want this one!</button
+    </li>
+  <ul>
+</div>

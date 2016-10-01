@@ -6,6 +6,7 @@
   module.service('MenuSearchService', MenuSearchService);
   module.directive('foundItems', FoundItemsDirective);
   module.directive('itemsLoaderIndicator', ItemsLoaderIndicatorDirective);
+  module.constant('ApiUrl', "https://davids-restaurant.herokuapp.com/menu_items.json");
 
   function ItemsLoaderIndicatorDirective() {
     var ddo = {
@@ -38,15 +39,14 @@
     var ctrl = this;
   }
 
-  MenuSearchService.$inject = ['$http'];
-  function MenuSearchService($http) {
+  MenuSearchService.$inject = ['$http', 'ApiUrl'];
+  function MenuSearchService($http, ApiUrl) {
 
     var service = this;
 
     service.getMatchedMenuItems = function(searchTerm) {
-      var url =  "https://davids-restaurant.herokuapp.com/menu_items.json";
       var options = {
-        url: url
+        url: ApiUrl
       };
       return $http(options).then(function (result) {
         var foundItems = [];

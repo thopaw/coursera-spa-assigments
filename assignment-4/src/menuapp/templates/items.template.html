@@ -1,0 +1,21 @@
+<div class="row">
+
+  <div class="col-md-6 item" ng-repeat="item in $ctrl.items">
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading">
+        <span class="label label-warning">{{ item.short_name }}</span>
+        {{ item.name }}
+      </h4>
+      <p class="list-group-item-text">
+        {{ item.description }}
+      </p>
+      <p>
+        {{ item.small_portion_name }} {{ item.price_small }} <span class="glyphicon glyphicon-eur"></span>
+      </p>
+      <p>
+        {{ item.large_portion_name }} {{ item.price_large }} <span class="glyphicon glyphicon-eur"></span>
+      </p>
+    </div>
+  </div>
+
+</div>

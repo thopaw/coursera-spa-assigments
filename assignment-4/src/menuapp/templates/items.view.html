@@ -1,0 +1,12 @@
+<div>
+
+    <ol class="breadcrumb">
+      <li><a ui-sref="home">Home</a></li>
+      <li><a ui-sref="categories">Categories</a></li>
+    </ol>
+
+    <h2><span class="label label-info">{{ itemsCtrl.data.category.short_name }}</span> Dishes: {{ itemsCtrl.data.category.name}}</h2>
+
+    <items items="itemsCtrl.data.menu_items"/>
+
+</div>
